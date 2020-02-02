@@ -6,10 +6,24 @@
     align-items: center;
   }
 
-  h1 {
+#register-card {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+#title {
+    font-family: 'Raleway', sans-serif;
+
+}
+/*  h1 {
     text-align: center;
     padding-top: 5px;
 	position: relative;
     top: 138px;
     margin-right: 16.6%;
-} 
+} */

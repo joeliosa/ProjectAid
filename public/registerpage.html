@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
@@ -23,37 +24,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <body>
       <nav1 class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">LawyerMatch</span>
+        <a href="index.html"><span class="navbar-brand mb-0 h1" id="title">LawyerMatch</span></a>
       </nav1>
-      <h1>REGISTER</h1>
       <div class="vertical-center">
       <div class="container">
       <div class="row justify-content-center">
-        <form>
-      
-        <div class="form-group">
-          <label for="exampleInputEmail1">email</label>
-          <input type="email" class="form-control" style="width: 400px; height: 35px;" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">password</label>
-          <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword2">confirm password</label>
+        <div class="card" id="register-card">
+          <h1 class="card-title">register</h1>
+          <form class="card-body">
+          <div class="form-group">
+            <label for="exampleInputEmail1">email</label>
+            <input type="email" class="form-control" style="width: 400px; height: 35px;" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">password</label>
             <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
           </div>
-        <div class="form-group">
-            <label for="exampleInputLocation1">location</label>
-            <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
-          </div>
-        <div class="form-group">
-            <label for="exampleInputLanguages1">languages</label>
-            <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
-          </div>  
-
-        <button type="submit" class="btn btn-primary">Join</button>
-      </form>
+          <div class="form-group">
+              <label for="exampleInputPassword2">confirm password</label>
+              <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
+            </div>
+          <div class="form-group">
+              <label for="exampleInputLocation1">location</label>
+              <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
+            </div>
+          <div class="form-group">
+              <label for="exampleInputLanguages1">languages</label>
+              <input type="password" class="form-control" style="width: 400px; height: 35px;" id="exampleInputPassword1">
+            </div>
+          <button type="submit" class="btn btn-light">Join</button>
+        </form>
+      </div>
       </div>
       </div>
       </div>

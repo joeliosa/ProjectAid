@@ -6,17 +6,38 @@ nav1,
 }
 */
 .vertical-center {
-    min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
+/*    min-height: 90%; 
+    min-height: 100vh; */
   
     display: flex;
     align-items: center;
-  }
+}
 
-  h1 {
-    text-align: center;
+#login {
+  padding: 10px;
+  border: none;
+  margin-top: 15%;
+}
+h1 {
+    /*text-align: center;*/
+    margin-left: 10px;
     padding-top: 5px;
-	position: relative;
-    top: 264px;
+    position: relative;
+    /*top: 260px;*/
     margin-right: 21.9%;
+    font-family: 'Raleway', sans-serif;
+
 }  
+
+.title, label {
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+}
+
+.navbar-brand {
+    font-family: 'Raleway', sans-serif;
+}
+
+#navbar {
+  background-color: white;
+}
