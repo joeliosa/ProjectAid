@@ -2,7 +2,15 @@
 <html>
 <head>
 	<title>Detainee Search</title>
-
+	<!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.8.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.8.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.8.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.8.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.8.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="detainees.css">
 </head>
@@ -16,7 +24,7 @@
     <h1 id="title">Detainee Search</h1>	
 </div>
 
-    <div class="container"">
+    <div class="container">
         <form class="form-inline row justify-content-center">
           <div class="form-group mb-2">
             <!-- <label for="state" class="mr-2">State</label> -->
@@ -167,11 +175,8 @@
     	</div>
    	 </div>
     </div>
-    <script src="app.js">
+    <script src="displaydetainees.js">
 
-    <script>
-        var database = firebase.database();
-        
     </script>
 
 
