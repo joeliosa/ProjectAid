@@ -21,10 +21,11 @@ document.addEventListener("DOMContentLoaded", event => {
 
     myOrg.onSnapshot(doc => {
         const data = doc.data();
-        document.getElementById('a').innerHTML = "org is: " + data.name
+        //document.getElementById('a').innerHTML = "org is: " + data.name
     })
-
 });
+
+document.getElementById("loginbutton").addEventListener("click", emailLogin);
 
 function showDetainee(){
 
@@ -41,20 +42,32 @@ function googleLogin() {
             .catch(console.log) 
 }
 function emailLogin(){
-    var email = app.email;
-    var password = app.password;
+    event.preventDefault();
+    
+    const email = document.getElementById("exampleInputEmail1").value;
+    const password = document.getElementById("exampleInputPassword1").value;
 
     if (!email || !password){
-        return console.log('Please enter your email and password')
+        console.log('Please enter your email and password');
+        return;
     }
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(function() {
+        window.alert("success");
+        console.log("success");
+        window.location.replace("detainees.html")
+    })
+    .catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log('sign in error', error)
+        window.alert("error");
+        console.log('sign in error', error);
+        return;
         // ...
-
+        
       });
+    
 }
 
 function updateOrg(e){
