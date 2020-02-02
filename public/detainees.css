@@ -2,6 +2,18 @@
 	margin-left: 15%;
 }
 
-.filter {
-	/*border: 1px black solid;*/
+a {
+	color: #3A3D4B;
+}
+a:hover {
+	color: #7AB981;
+}
+.btn-info {
+	background-color: #7AB981;
+	border: #7AB981;
+}
+
+.btn-info:hover {
+	background-color: #3A3D4B;
+	border: #3A3D4B;
 }
